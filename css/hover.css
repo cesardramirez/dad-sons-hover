@@ -1,0 +1,34 @@
+body {
+	background-color: peru;
+	font-family: sans-serif;
+}
+
+.post {
+	background-color: white;
+	border: 10px solid red;
+	padding: 20px;
+	text-align: center;
+	transition: .2s;
+	overflow: hidden;
+}
+.post:hover {
+	background-color: skyblue;
+}
+
+/* Se agrega una animación al hijo de post, en este caso, <img> y <p>. */
+.post img, .post p {
+	transition: .3s;
+}
+.post img {
+	transform: translateY(-300px);
+}
+.post:hover img {
+	transform: scale(1.2);
+}
+
+.post p {
+	transform: translateY(100px);
+}
+.post:hover p {
+	transform: translateY(0);
+}
